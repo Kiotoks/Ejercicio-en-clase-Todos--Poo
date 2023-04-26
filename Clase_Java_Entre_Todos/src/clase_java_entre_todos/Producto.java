@@ -24,5 +24,37 @@ public class Producto {
     {
         return " DESCRIPCION: "+ this.desc + " MARCA: "+ this.marca+ " PRECIO: "+ this.pcio+ "COLOR: "+ this.color ;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public double getPcio() {
+        return pcio;
+    }
+
+    public void setPcio(double pcio) {
+        this.pcio = pcio;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
     
 }
