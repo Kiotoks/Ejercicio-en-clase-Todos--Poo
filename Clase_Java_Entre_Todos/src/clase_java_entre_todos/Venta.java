@@ -1,4 +1,4 @@
-public class Venta {
+public class Venta{
     private Producto[] lista;
     private String fecha;
     
@@ -24,12 +24,14 @@ public class Venta {
     }
     
     public double calcularTot(){
-        double total;
-        if(lista.getDesc().equals("Zapatilla") && lista.getMarca.equals("Adidas")){
-            total = lista.getPcio()-(lista.getPcio()*30/100);
-        }
-        else{
-            total = lista.getPcio();
+        double total = 0;
+        for(int x = 0; x < lista.length; x++){
+            if(lista[x].getDesc().equals("Zapatilla") && lista[x].getMarca.equals("Adidas")){
+                total = lista[x].getPcio()-(lista[x].getPcio()*30/100);
+            }
+            else{
+                total = lista[x].getPcio();
+            }
         }
         return total;
     }
