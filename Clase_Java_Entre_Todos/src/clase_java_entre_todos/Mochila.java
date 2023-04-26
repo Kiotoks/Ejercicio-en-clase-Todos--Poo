@@ -1,12 +1,13 @@
-package mochaila;
+package clase_java_entre_todos;
 
 /*Fausto Pastor & Alejandro Bacca*/
 public class Mochila extends Producto{
+    
    private boolean matera;
    private boolean notebook;
    private  int tamaño; 
 
-    public Mochila(boolean material, boolean notebook, int tamaño) {
+    public Mochila(boolean matera, boolean notebook, int tamaño, String color, String desc, double precio,String marca) {
         super(color, desc, precio, marca);
         this.matera = matera;
         this.notebook = notebook;

@@ -1,3 +1,6 @@
+package clase_java_entre_todos;
+
+
 public class Venta{
     private Producto[] lista;
     private String fecha;
@@ -26,7 +29,7 @@ public class Venta{
     public double calcularTot(){
         double total = 0;
         for(int x = 0; x < lista.length; x++){
-            if(lista[x].getDesc().equals("Zapatilla") && lista[x].getMarca.equals("Adidas")){
+            if(lista[x].getDesc().equals("Zapatilla") && lista[x].getMarca().equals("Adidas")){
                 total = lista[x].getPcio()-(lista[x].getPcio()*30/100);
             }
             else{

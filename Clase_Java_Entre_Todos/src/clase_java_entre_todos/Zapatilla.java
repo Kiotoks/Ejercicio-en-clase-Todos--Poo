@@ -1,4 +1,4 @@
-package zapatilla;
+package clase_java_entre_todos;
 /**
  *
  * Jeremias Leiva, Josue Bieber
@@ -10,7 +10,7 @@ public class Zapatilla extends Producto{
     
 
     public Zapatilla(String color, String desc, double pcio, String marca, int talle, String uso){
-        super(color, desc, pcio, marca, talle, uso);
+        super(color, desc, pcio, marca);
         this.talle = talle;
         this.uso = uso;
 

@@ -1,17 +1,61 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
 
-package com.mycompany.camperas;
 
-/**
- *
- * @author ET36
- */
-public class Camperas {
+package clase_java_entre_todos;
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+public class Camperas extends Producto {
+    boolean rever;
+    boolean imp;
+    boolean cap;
+    
+    public Camperas(boolean rever, boolean imp, boolean cap, String color, String desc, double pcio, String marca){
+        super(color, desc, pcio, marca);
+        this.rever = rever;
+        this.imp = imp;
+        this.cap = cap;
     }
+
+    public boolean isRever() {
+        return rever;
+    }
+
+    public void setRever(boolean rever) {
+        this.rever = rever;
+    }
+
+    public boolean isImp() {
+        return imp;
+    }
+
+    public void setImp(boolean imp) {
+        this.imp = imp;
+    }
+
+    public boolean isCap() {
+        return cap;
+    }
+
+    public void setCap(boolean cap) {
+        this.cap = cap;
+    }
+   
+    
+    
+   public String toString(){
+       String r = "";
+       String i = "";
+       String c = "";
+        if (rever){
+            r = "reversible";
+        }
+        if (imp){
+            i = "impermeable";
+        }
+        if (cap){
+            c = "con capucha";
+        }
+        return super.toString() + r + i + c ; 
+   }
+    
+    
+    
 }

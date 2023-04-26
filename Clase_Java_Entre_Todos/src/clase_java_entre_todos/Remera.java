@@ -1,6 +1,5 @@
 
-package com.mycompany.remera;
-
+package clase_java_entre_todos;
 public class Remera extends Producto {
     
     private char talle;
@@ -10,7 +9,7 @@ public class Remera extends Producto {
     
     
     public Remera(char talle, String manga, String cuello, String detalle, String color, String desc, double precio, String marca) {
-        super(color, desc, marca, precio);
+        super(color, desc, precio, marca);
         this.talle = talle;
         this.manga = manga;
         this.cuello = cuello;
@@ -58,5 +57,5 @@ public class Remera extends Producto {
         this.detalle = detalle;
     }
     
-  public  
+
 }
